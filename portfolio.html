@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shreesaran — Portfolio</title>
+  <meta name="description" content="Personal portfolio of [Your Name]." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="d.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">Shreesaran<span></span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="menu-btn" id="openMenu">Menu</button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="drawer" id="drawer">
+    <div class="drawer-panel">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px">
+        <strong>Menu</strong>
+        <button class="menu-btn" id="closeMenu">Close</button>
+      </div>
+      <a href="#about" onclick="closeDrawer()">About</a>
+      <a href="#education" onclick="closeDrawer()">Education</a>
+      <a href="#skills" onclick="closeDrawer()">Skills</a>
+      <a href="#projects" onclick="closeDrawer()">Projects</a>
+      <a href="#contact" onclick="closeDrawer()">Contact</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="container hero" id="top">
+    <div>
+      <span class="badge">🎓 Higher Secondary Completed</span>
+      <h1 class="title">Hi, I’m <span class="grad">Shreesaran</span> — aspiring <span class="grad">Full Stack Developer</span></h1>
+      <p class="lead">I’ve recently completed my Higher Secondary education. I enjoy learning new tech, building simple projects, and improving my skills every day.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="[link-to-your-resume.pdf]" download>Download Resume</a>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <img class="hero-img" src="img-Photoroom.png" alt="Profile photo">
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="card">
+        <h2>About Me</h2>
+        <p style="text-align:justify">
+          I’m Shreesaran from [Namakkal, TamilNadu]. I’ve finished my Higher Secondary (Class 12) in Computer Science at Model School.
+          I’m interested in web development and problem solving. I’m currently learning HTML, CSS, and JavaScript.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Skills -->
+  <section id="education">
+    <div class="container grid two">
+      <div class="card">
+        <h2>Education</h2>
+        <div>
+          <h3>Higher Secondary (Class 12)</h3>
+          <p><span class="pill">Completed</span> — 2022-2023</p>
+          <p>Model School, Mallur — Stream: Computer Science</p>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Skills</h2>
+        <p>• HTML & CSS (Beginner)</p>
+        <p>• JavaScript (Basics)</p>
+        <p>• Communication & Teamwork</p>
+        <p>• MS Office / Google Docs/Google Sheet</p>
+        <p>• Figma</p>
+        <p>• Canva</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2 style="margin-bottom:12px">Projects</h2>
+      <div class="grid three">
+        <article class="card">
+          <h3>Simple Portfolio</h3>
+          <p>A responsive personal website with smooth scrolling and colored image shadows.</p>
+          <p><a href="#" target="_blank">Live</a> · <a href="#" target="_blank">Code</a></p>
+        </article>
+        <article class="card">
+          <h3>Poster Design</h3>
+          <p>Make a poster for department coding event</p>
+          <p><a href="#" target="_blank">Live</a> · <a href="#" target="_blank">Code</a></p>
+        </article>
+        <article class="card">
+          <h3>Hospital Home Page</h3>
+          <p>Basic Hosiptal Home Page built with HTML, CSS, and JS.</p>
+          <p><a href="#" target="_blank">Live</a> · <a href="#" target="_blank">Code</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+  <div class="container grid two">
+    <div class="card">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/mzzpyjkw" method="POST" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+    </div>
+  <div class="card other-info">
+  <h2>Other Info</h2>
+  <p>Email: <a href="mailto:shreesarankumar6@gmail.com">shreesarankumar6@gmail.com</a></p>
+  <p>Phone: <a href="tel:+919994014980">+91 9994014980</a></p>
+  <p>Location: Namakkal, TamilNadu</p>
+  
+  <h3>Links</h3>
+  <p><a href="https://github.com/shreesaran151" target="_blank">GitHub</a></p>
+  <p><a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a></p>
+  <p><a href="https://your-portfolio-link" target="_blank">Portfolio</a></p>
+</div>
+
+</section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> [Your Name]. All rights reserved.</div>
+  </footer>
+
+  <script>
+    // Year stamp
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile drawer open/close
+    const drawer = document.getElementById('drawer');
+    document.getElementById('openMenu').addEventListener('click', ()=> drawer.style.display='block');
+    document.getElementById('closeMenu').addEventListener('click', ()=> drawer.style.display='none');
+    function closeDrawer(){ drawer.style.display='none' }
+    window.closeDrawer = closeDrawer;
+  </script>
+</body>
+</html>
